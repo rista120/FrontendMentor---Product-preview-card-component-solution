@@ -32,7 +32,7 @@ body {
 }
 
 .preview {
-    background: url(/images/image-product-desktop.jpg);
+    background: url("./images/image-product-desktop.jpg");
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -108,7 +108,7 @@ button:hover {
         max-width: 300px;
     }
     .preview {
-        background: url(/images/image-product-mobile.jpg);
+        background: url("./images/image-product-mobile.jpg");
         background-position: center;
         background-size: cover;
         width: 300px;
