@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.preview {
+    background: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+}
+
+.info {
+    width: 300px;
+    height: 450px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p.perfume {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.44em;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 31.68px;
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    line-height: 162.5%;
+    letter-spacing: 0.015em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.newprice {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin-right: 18px;
+}
+
+.oldprice {
+    text-decoration-line: line-through;
+}
+
+button {
+    width: 236px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(156, 42%, 18%);
+}
+
+@media (max-width:640px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    .preview {
+        background: url(/images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 210px;
+    }
+}
